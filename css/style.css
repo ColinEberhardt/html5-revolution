@@ -108,6 +108,8 @@ body {
   -ms-transition:     opacity 1s;
   -o-transition:      opacity 1s;
   transition:         opacity 1s;
+  
+  z-index: 1;
 }
 .step.active {
   opacity: 1;
@@ -196,4 +198,26 @@ circle,
 	-ms-transition:     opacity 1s;
 	-o-transition:      opacity 1s;
 	transition:         opacity 1s;
+}
+
+#impress svg {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style:    preserve-3d;
+  -ms-transform-style:     preserve-3d;
+  -o-transform-style:      preserve-3d;
+  transform-style:         preserve-3d;
+  
+  -webkit-transform-origin: top left;
+  -moz-transform-origin:    top left;
+  -ms-transform-origin:     top left;
+  -o-transform-origin:      top left;
+  transform-origin:         top left;
+
+  -webkit-transform: scale(0.2) translateZ(0);
+  -moz-transform:    scale(0.2) translateZ(0);
+  -ms-transform:     scale(0.2) translateZ(0);
+  -o-transform:      scale(0.2) translateZ(0);
+  transform:         scale(0.2) translateZ(0);
+  
+  z-index: -1;
 }
